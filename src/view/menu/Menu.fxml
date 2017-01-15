@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright (C) 2016 huextrat <extrat.h@gmail.com>.
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301  USA
+-->
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="443.0" prefWidth="550.0" spacing="20.0" stylesheets="/snake/utilities/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.menu.MenuController">
+    <children>
+        <Text fx:id="textTitle" text="SnakeGame">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="43.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </Text>
+        <Text fx:id="textSpeed" strokeType="OUTSIDE" strokeWidth="0.0" text="Vitesse du serpent :">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+        </Text>
+        <HBox alignment="TOP_CENTER" prefHeight="23.0" prefWidth="400.0">
+         <children>
+            <RadioButton fx:id="rbLent" mnemonicParsing="false" onAction="#radioSelect" text="Lent" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="radioSpeed" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbMoyen" mnemonicParsing="false" onAction="#radioSelect" prefHeight="18.0" prefWidth="68.0" text="Moyen" textFill="WHITE" toggleGroup="$radioSpeed">
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbRapide" mnemonicParsing="false" onAction="#radioSelect" text="Rapide" textFill="WHITE" toggleGroup="$radioSpeed">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER" prefHeight="23.0" prefWidth="400.0">
+         <children>
+            <RadioButton fx:id="rbExtreme" mnemonicParsing="false" onAction="#radioSelect" prefHeight="17.0" prefWidth="85.0" text="Extreme" textFill="WHITE" toggleGroup="$radioSpeed">
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbNoField" mnemonicParsing="false" onAction="#radioSelect" prefHeight="17.0" prefWidth="113.0" text="Sans bord" textFill="WHITE" toggleGroup="$radioSpeed" />
+         </children>
+        </HBox>
+      <Text fx:id="colorSnake" text="Couleur du serpent :">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+      </Text>
+      <ColorPicker fx:id="colorPicker"/>
+        <Text fx:id="textPlayer" text="Nom du joueur :">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+        </Text>
+        <TextField fx:id="nameField" alignment="CENTER" maxWidth="200.0" />
+        <Button fx:id="play" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#play" text="Jouer">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+        </Button>
+        <Button fx:id="quit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#quit" text="Quitter">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+        <Label fx:id="labelHow" onMouseClicked="#labelHow" text="Comment jouer ?" textFill="WHITE" underline="true" />
+    </children>
+</VBox>

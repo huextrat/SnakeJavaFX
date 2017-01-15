@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2016 huextrat <extrat.h@gmail.com>.
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301  USA
+-->
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane fx:id="pane" prefHeight="443.0" prefWidth="550.0" stylesheets="@styleGame.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.game.ControllerSnake">
+    <children>
+      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" style="-fx-text-fill: #ecf0f1;" text="Vitesse :">
+         <font>
+            <Font name="Bodoni MT Black" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="speedLab" text="Label" contentDisplay="CENTER" layoutX="55.0" layoutY="51.0" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="96.0" style="-fx-text-fill: #ecf0f1;" text="Score :">
+         <font>
+            <Font name="Bodoni MT Black" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoresLab" contentDisplay="CENTER" layoutX="58.0" layoutY="97.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="127.0" style="-fx-text-fill: #ecf0f1;" text="Top 1 :">
+         <font>
+            <Font name="Bodoni MT Black" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="bestLab" contentDisplay="CENTER" layoutX="65.0" layoutY="128.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font></Label>
+      <Pane fx:id="paneSnake" layoutX="139.0" layoutY="36.0" mouseTransparent="true" prefHeight="400.0" prefWidth="400.0">
+          <opaqueInsets>
+            <Insets />
+          </opaqueInsets>
+         <children>
+            <Label fx:id="pauseLab" layoutX="61.0" layoutY="183.0" text="&quot;ESPACE&quot; pour continuer !" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="winLab" layoutX="72.0" layoutY="148.0" text="Bravo vous avez gagné !" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="leaderButton" layoutX="12.0" layoutY="303.0" onAction="#leaderBoard" text="Tableau des scores">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="newGame" layoutX="18.0" layoutY="350.0" onAction="#newGame" text="Nouvelle Partie">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="quit" layoutX="41.0" layoutY="386.0" onAction="#quit" text="Quitter">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Button>
+      <MenuBar prefHeight="25.0" prefWidth="550.0" style="-fx-border-color: #293e50; -fx-border-width: 1;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#newGame" text="Nouvelle partie" />
+              <MenuItem mnemonicParsing="false" onAction="#leaderBoard" text="Tableau des scores" />
+              <MenuItem mnemonicParsing="false" onAction="#feedback" text="Feedback" />
+              <SeparatorMenuItem />
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Quitter" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#popupAbout" text="A propos !" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="playerLab" contentDisplay="CENTER" layoutX="40.0" layoutY="242.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="30.0" layoutY="222.0" style="-fx-text-fill: #ecf0f1;" text="Compte :">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

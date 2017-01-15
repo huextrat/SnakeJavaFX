@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright (C) 2016 huextrat <extrat.h@gmail.com>.
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301  USA
+-->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="453.0" stylesheets="/snake/utilities/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="16.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur le jeu du serpent !" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="16.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout1" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour controler celui-ci vous devez utiliser les flèches directionnelles " wrappingWidth="359.947265625" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="16.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout2" strokeType="OUTSIDE" strokeWidth="0.0" text="de votre clavier ou les touches ZSQD." wrappingWidth="197.947265625" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="19.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout3" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous avez envie de mettre le jeu en pause vous pouvez tout simplement" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="14.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout4" strokeType="OUTSIDE" strokeWidth="0.0" text="appuyer sur la touche ESPACE de votre clavier." />
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="textAbout6" strokeType="OUTSIDE" strokeWidth="0.0" text="Version 2.1" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="453.0">
+         <children>
+            <Text fx:id="website" strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.hugoextrat.com" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

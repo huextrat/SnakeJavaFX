@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2016 huextrat <extrat.h@gmail.com>.
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301  USA
+-->
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="430.0" prefWidth="400.0" spacing="10.0" stylesheets="/snake/utilities/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.leaderboard.LeaderController">
+   <children>
+      <Text fx:id="textTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Tableau des scores :">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="textTitle2" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 10">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="textModeLeader" strokeType="OUTSIDE" strokeWidth="0.0" text="Choix du mode :">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="choiceMode" prefWidth="150.0" />
+      <ListView fx:id="listView" />
+      <Label fx:id="localLabel" style="-fx-text-fill: RED;">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</VBox>
