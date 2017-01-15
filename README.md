@@ -1,10 +1,10 @@
 # SnakeGame JAVAFX
 Voici le jeu du serpent réalisé en JavaFX.
 
-v1.0
+v2.1
 
-- https://www.hugoextrat.com/download/SnakeGame.exe
+- https://www.hugoextrat.com/assets/download/SnakeGame.exe
 
 Vous pouvez retrouver un petite présentation sur mon site :
-- https://www.hugoextrat.com/snakegame.html
+- https://www.hugoextrat.com/snakegame
 
